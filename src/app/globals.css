@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2C5F2D;
+  --color-secondary: #97BC62;
+  --color-cta: #EA580C;
+  --color-background: #FAFAF9;
+  --color-surface: #FFFFFF;
+  --color-text: #1C1917;
+  --color-muted: #57534E;
+  --color-border: #E7E5E4;
+
+  --font-heading: var(--font-heading), "Bebas Neue", sans-serif;
+  --font-body: var(--font-body), "Source Sans 3", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-hero-pattern {
+  background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop');
+}
