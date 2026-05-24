@@ -13,6 +13,7 @@ import {
   ChevronRight,
   Plane,
 } from "lucide-react";
+import BaliPackages from "@/components/BaliPackages";
 
 export default function HomePage() {
   return (
@@ -102,6 +103,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* June Special Departure - Bali Package Promo */}
+      <section id="june_special_deal" className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/15 relative overflow-hidden font-body">
+        {/* Decorative elements */}
+        <div className="absolute top-10 left-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl -z-10"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-cta/15 rounded-full blur-3xl -z-10"></div>
+        
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12 font-body">
+            <span className="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-cta text-white text-xs font-bold tracking-wider mb-4 uppercase animate-pulse">
+              🔥 Limited Edition June Special
+            </span>
+            <h2 className="text-5xl md:text-6xl font-heading text-primary leading-tight">
+              Bali Comfort Package
+            </h2>
+            <p className="text-xl text-muted max-w-2xl mx-auto font-light font-body">
+              Our price magic is back without compromise on quality. Return flights, premium resorts, and private tours included.
+            </p>
+          </div>
+
+          <BaliPackages />
+        </div>
+      </section>
+
       {/* Popular Destinations */}
       <section id="popular_destinations" className="py-24 bg-white font-body">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 font-body">
@@ -132,7 +156,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 z-10 font-body">
                 <span className="bg-cta text-white font-bold text-xs uppercase tracking-wider px-2.5 py-1 rounded-md mb-2 inline-block font-body">
-                  ₹25,000 / couple
+                  Starting ₹25,000 / couple
                 </span>
                 <span className="text-white/80 text-sm font-bold mb-1 block font-body">India</span>
                 <h3 className="text-3xl font-heading text-white group-hover:text-cta transition-colors leading-tight">

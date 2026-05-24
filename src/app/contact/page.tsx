@@ -72,11 +72,13 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-xl font-heading text-text mb-1 font-body font-bold">Visit Us</h3>
                     <p className="text-muted leading-relaxed font-body">
-                      Elohim Tours Corporate HQ
+                      A/202, Sairam Residency,
                       <br />
-                      C.G. Road, Ahmedabad,
+                      Behind Nutan Row House,
                       <br />
-                      Gujarat 380009, India
+                      Near Vidyakunj School,
+                      <br />
+                      Pal, Surat.
                     </p>
                   </div>
                 </div>
@@ -263,7 +265,7 @@ export default function ContactPage() {
                       className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:bg-white outline-none focus:border-cta font-body text-text font-medium"
                     >
                       <option>General Inquiry</option>
-                      <option>Goa 3N/4D (Land Only Package) - ₹25,000</option>
+                      <option>Goa 3N/4D (3★ Stay) & 4N/5D (5★ Boutique)</option>
                       <option>Baku Experience 3N/4D (Premium Package)</option>
                       <option>Georgia Scenic Getaway</option>
                       <option>Philippines Tropical Escape</option>

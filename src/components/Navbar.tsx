@@ -37,7 +37,11 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border font-body">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="flex justify-between items-center h-20">
-              <Link href="/" className="flex items-center gap-2 group" onClick={closeMenu}>
+              <Link
+                href="/"
+                className="flex items-center gap-2 group"
+                onClick={closeMenu}
+              >
                 <Compass className="w-8 h-8 text-primary transition-transform group-hover:rotate-45 duration-500" />
                 <span className="font-heading text-3xl text-primary tracking-wider">
                   ELOHIM TOURS
@@ -51,7 +55,9 @@ export default function Navbar() {
                       key={link.href}
                       href={link.href}
                       className={`text-base font-medium transition-colors ${
-                        isActive ? "text-primary font-bold" : "text-text hover:text-primary"
+                        isActive
+                          ? "text-primary font-bold"
+                          : "text-text hover:text-primary"
                       }`}
                     >
                       {link.label}
@@ -110,7 +116,9 @@ export default function Navbar() {
               href={link.href}
               onClick={closeMenu}
               className={`text-4xl font-heading transition-colors ${
-                isActive ? "text-primary font-bold" : "text-text hover:text-primary"
+                isActive
+                  ? "text-primary font-bold"
+                  : "text-text hover:text-primary"
               }`}
             >
               {link.label}

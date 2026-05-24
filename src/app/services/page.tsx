@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Calendar, Check, X, Sparkles, MapPin, Phone } from "lucide-react";
+import { Calendar, Check, Sparkles, MapPin, Phone } from "lucide-react";
+import GoaPackages from "@/components/GoaPackages";
+import BaliPackages from "@/components/BaliPackages";
 
 export const metadata = {
   title: "Premium Tour Packages | Elohim Tours",
   description:
-    "Explore our premium tour packages: Goa 3N/4D Land Package, Baku Experience Premium Package, and customized tours for Georgia and the Philippines.",
+    "Explore our premium tour packages: Goa 3N/4D & 5★ Astor Suite Land Packages, Baku Experience Premium Package, and customized tours for Georgia and the Philippines.",
 };
 
 export default function ServicesPage() {
@@ -34,114 +36,12 @@ export default function ServicesPage() {
       {/* Packages Section */}
       <section id="packages_list" className="py-24 bg-background font-body">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 space-y-24 font-body">
-          {/* Package 1: Goa */}
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-border grid lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7 space-y-6">
-              <div className="flex flex-wrap items-center gap-3 font-body">
-                <span className="bg-orange-100 text-cta font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-full font-body">
-                  Top Seller India
-                </span>
-                <span className="bg-green-100 text-primary font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-full font-body">
-                  3 Nights / 4 Days
-                </span>
-              </div>
-              <h2 className="text-4xl lg:text-5xl font-heading text-primary leading-tight">
-                Goa Beach Getaway (Land Only Package)
-              </h2>
-              <p className="text-lg text-muted leading-relaxed font-body">
-                Experience the perfect Goan holiday with stay at Candolim Beach, sightseeing across iconic North and South Goa beaches, and private transfers included.
-              </p>
-
-              {/* Inclusions & Exclusions */}
-              <div className="grid md:grid-cols-2 gap-6 pt-4 border-t border-border font-body">
-                <div>
-                  <h4 className="font-bold text-text mb-3 flex items-center gap-2 text-primary font-body">
-                    <Check className="w-5 h-5 text-secondary" /> Inclusions
-                  </h4>
-                  <ul className="space-y-2.5 text-sm text-muted font-body">
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span> Stay at 3*** hotel at Candolim beach.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span> Deluxe AC room for comfortable stay.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span> Daily breakfast and dinner at hotel.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span> 1 Day North Goa tour by AC coach bus.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span> 1 Day South Goa tour by AC coach bus.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary font-bold">•</span> Transfers from airport / North Goan railway station by private car.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h4 className="font-bold text-text mb-3 flex items-center gap-2 text-red-600 font-body">
-                    <X className="w-5 h-5 text-red-500" /> Exclusions
-                  </h4>
-                  <ul className="space-y-2.5 text-sm text-muted font-body">
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 font-bold">•</span> Air / Railway ticketing (available extra upon request).
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 font-bold">•</span> Meals other than inclusions.
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 font-bold">•</span> Personal expenses & laundry.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="pt-6 flex flex-wrap items-center justify-between gap-6 border-t border-border font-body">
-                <div>
-                  <p className="text-xs uppercase tracking-wider font-bold text-muted font-body">Special Offer</p>
-                  <span className="text-4xl font-heading text-cta font-bold">
-                    ₹25,000/-
-                    <span className="text-base font-body text-muted font-normal ml-2">
-                      per couple
-                    </span>
-                  </span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <a
-                    href="tel:9925125511"
-                    className="p-3 bg-secondary/20 hover:bg-secondary/30 text-primary rounded-full transition-colors font-body"
-                    title="Call Now"
-                  >
-                    <Phone className="w-6 h-6" />
-                  </a>
-                  <Link
-                    href="/contact"
-                    className="bg-primary hover:bg-green-900 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-green-800/30 uppercase tracking-wide text-sm font-body"
-                  >
-                    Book Package
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="lg:col-span-5 relative aspect-[4/3] w-full h-full min-h-[350px]">
-              <Image
-                src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=1000&auto=format&fit=crop"
-                alt="Goa Candolim Beach"
-                fill
-                sizes="(max-w-1024px) 100vw, 40vw"
-                className="rounded-2xl shadow-2xl object-cover"
-              />
-              <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow-lg font-body font-bold text-sm text-primary flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-cta" /> Candolim Beach, Goa
-              </div>
-            </div>
-          </div>
+          {/* Package 1: Goa (Interactive Selector) */}
+          <GoaPackages />
 
           {/* Package 2: Baku Experience */}
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-border grid lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-5 relative aspect-[4/3] w-full h-full min-h-[350px] order-2 lg:order-1">
+          <div className="bg-white rounded-3xl p-5 sm:p-8 lg:p-12 shadow-xl border border-border grid lg:grid-cols-12 gap-8 lg:gap-12 items-stretch lg:items-center">
+            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full min-h-[250px] sm:min-h-[350px] lg:min-h-[550px] lg:h-full order-1 lg:order-1">
               <Image
                 src="https://images.unsplash.com/photo-1583467875263-d50dec37a88c?q=80&w=1000&auto=format&fit=crop"
                 alt="Baku Azerbaijan"
@@ -153,7 +53,7 @@ export default function ServicesPage() {
                 <MapPin className="w-4 h-4 text-cta" /> Baku, Azerbaijan
               </div>
             </div>
-            <div className="lg:col-span-7 space-y-6 order-1 lg:order-2">
+            <div className="lg:col-span-7 space-y-6 order-2 lg:order-2">
               <div className="flex flex-wrap items-center gap-3 font-body">
                 <span className="bg-orange-100 text-cta font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-full font-body flex items-center gap-1">
                   <Sparkles className="w-3.5 h-3.5 text-cta" /> PREMIUM PACKAGE 3
@@ -162,10 +62,10 @@ export default function ServicesPage() {
                   3 Nights / 4 Days
                 </span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-heading text-primary leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading text-primary leading-tight">
                 Baku Experience Land Package (Without Flight)
               </h2>
-              <p className="text-lg text-muted leading-relaxed font-body">
+              <p className="text-base sm:text-lg text-muted leading-relaxed font-body">
                 Discover the architectural marvels and historic beauty of Azerbaijan with our exclusive premium package, designed for supreme comfort and memorable sightseeing. Special B2B rates available!
               </p>
 
@@ -197,24 +97,25 @@ export default function ServicesPage() {
                 </div>
               </div>
 
-              <div className="pt-6 flex flex-wrap items-center justify-between gap-6 border-t border-border font-body">
+              <div className="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-t border-border font-body">
                 <div>
                   <p className="text-xs uppercase tracking-wider font-bold text-cta font-body">B2B & B2C Inquiries</p>
                   <span className="text-3xl font-heading text-text font-bold">
                     Best Industry Rates
                   </span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex gap-3 w-full sm:w-auto">
                   <a
                     href="tel:9925125511"
-                    className="p-3 bg-secondary/20 hover:bg-secondary/30 text-primary rounded-full transition-colors font-body"
+                    className="flex-1 sm:flex-initial p-3.5 bg-secondary/20 hover:bg-secondary/30 text-primary rounded-full transition-colors font-body flex items-center justify-center gap-2"
                     title="Call Now"
                   >
-                    <Phone className="w-6 h-6" />
+                    <Phone className="w-5 h-5" />
+                    <span className="sm:hidden text-sm font-bold">Call Us</span>
                   </a>
                   <Link
                     href="/contact"
-                    className="bg-cta hover:bg-orange-700 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-orange-500/30 uppercase tracking-wide text-sm font-body"
+                    className="flex-2 sm:flex-initial bg-cta hover:bg-orange-700 text-white px-6 sm:px-8 py-3.5 rounded-full font-bold transition-all shadow-lg hover:shadow-orange-500/30 uppercase tracking-wide text-sm font-body text-center flex items-center justify-center"
                   >
                     Inquire B2B / B2C
                   </Link>
@@ -224,8 +125,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Package 3: Georgia Scenic Escape */}
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-border grid lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7 space-y-6">
+          <div className="bg-white rounded-3xl p-5 sm:p-8 lg:p-12 shadow-xl border border-border grid lg:grid-cols-12 gap-8 lg:gap-12 items-stretch lg:items-center">
+            <div className="lg:col-span-7 space-y-6 order-2 lg:order-1">
               <div className="flex flex-wrap items-center gap-3 font-body">
                 <span className="bg-orange-100 text-cta font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-full font-body">
                   Caucasus Paradise
@@ -234,10 +135,10 @@ export default function ServicesPage() {
                   4 Nights / 5 Days
                 </span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-heading text-primary leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading text-primary leading-tight">
                 Georgia Panoramic Highlands
               </h2>
-              <p className="text-lg text-muted leading-relaxed font-body">
+              <p className="text-base sm:text-lg text-muted leading-relaxed font-body">
                 Explore the charming cobblestone streets of Tbilisi and the majestic snow-capped peaks of Kazbegi. Enjoy premium 4★ stays, private wine tasting, and guided Caucasus excursions.
               </p>
               <ul className="space-y-3 text-muted mb-8 list-disc list-inside font-body text-sm">
@@ -247,31 +148,32 @@ export default function ServicesPage() {
                 <li>Traditional Georgian dining & wine masterclass</li>
                 <li>24/7 dedicated concierge assistance</li>
               </ul>
-              <div className="pt-6 flex flex-wrap items-center justify-between gap-6 border-t border-border font-body">
+              <div className="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-t border-border font-body">
                 <div>
                   <p className="text-xs uppercase tracking-wider font-bold text-muted font-body">Inquire Rates</p>
                   <span className="text-3xl font-heading text-text font-bold">
                     Special Couple & Group Rates
                   </span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex gap-3 w-full sm:w-auto">
                   <a
                     href="tel:9925125511"
-                    className="p-3 bg-secondary/20 hover:bg-secondary/30 text-primary rounded-full transition-colors font-body"
+                    className="flex-1 sm:flex-initial p-3.5 bg-secondary/20 hover:bg-secondary/30 text-primary rounded-full transition-colors font-body flex items-center justify-center gap-2"
                     title="Call Now"
                   >
-                    <Phone className="w-6 h-6" />
+                    <Phone className="w-5 h-5" />
+                    <span className="sm:hidden text-sm font-bold">Call Us</span>
                   </a>
                   <Link
                     href="/contact"
-                    className="bg-primary hover:bg-green-900 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-green-800/30 uppercase tracking-wide text-sm font-body"
+                    className="flex-2 sm:flex-initial bg-primary hover:bg-green-900 text-white px-6 sm:px-8 py-3.5 rounded-full font-bold transition-all shadow-lg hover:shadow-green-800/30 uppercase tracking-wide text-sm font-body text-center flex items-center justify-center"
                   >
                     Book Georgia
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-5 relative aspect-[4/3] w-full h-full min-h-[350px]">
+            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full min-h-[250px] sm:min-h-[350px] lg:min-h-[550px] lg:h-full order-1 lg:order-2">
               <Image
                 src="https://images.unsplash.com/photo-1546548970-71785318a17b?q=80&w=1000&auto=format&fit=crop"
                 alt="Tbilisi Georgia"
@@ -286,8 +188,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Package 4: Philippines */}
-          <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-border grid lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-5 relative aspect-[4/3] w-full h-full min-h-[350px] order-2 lg:order-1">
+          <div className="bg-white rounded-3xl p-5 sm:p-8 lg:p-12 shadow-xl border border-border grid lg:grid-cols-12 gap-8 lg:gap-12 items-stretch lg:items-center">
+            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full min-h-[250px] sm:min-h-[350px] lg:min-h-[550px] lg:h-full order-1 lg:order-1">
               <Image
                 src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1000&auto=format&fit=crop"
                 alt="Palawan Philippines"
@@ -299,7 +201,7 @@ export default function ServicesPage() {
                 <MapPin className="w-4 h-4 text-cta" /> El Nido, Palawan
               </div>
             </div>
-            <div className="lg:col-span-7 space-y-6 order-1 lg:order-2">
+            <div className="lg:col-span-7 space-y-6 order-2 lg:order-2">
               <div className="flex flex-wrap items-center gap-3 font-body">
                 <span className="bg-orange-100 text-cta font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-full font-body">
                   Tropical Luxury
@@ -308,10 +210,10 @@ export default function ServicesPage() {
                   5 Nights / 6 Days
                 </span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-heading text-primary leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading text-primary leading-tight">
                 Philippines Island Escape (Palawan & Manila)
               </h2>
-              <p className="text-lg text-muted leading-relaxed font-body">
+              <p className="text-base sm:text-lg text-muted leading-relaxed font-body">
                 Immerse yourself in world-renowned limestone lagoons, crystal turquoise beaches, and spectacular underwater marine life. B2B & B2C custom land operations.
               </p>
               <ul className="space-y-3 text-muted mb-8 list-disc list-inside font-body text-sm">
@@ -320,24 +222,25 @@ export default function ServicesPage() {
                 <li>Snorkeling gear, environmental fees & permits included</li>
                 <li>Airport transfers in Manila and Puerto Princesa</li>
               </ul>
-              <div className="pt-6 flex flex-wrap items-center justify-between gap-6 border-t border-border font-body">
+              <div className="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-t border-border font-body">
                 <div>
                   <p className="text-xs uppercase tracking-wider font-bold text-cta font-body">Inquire Rates</p>
                   <span className="text-3xl font-heading text-text font-bold">
                     Customized Itineraries
                   </span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex gap-3 w-full sm:w-auto">
                   <a
                     href="tel:9925125511"
-                    className="p-3 bg-secondary/20 hover:bg-secondary/30 text-primary rounded-full transition-colors font-body"
+                    className="flex-1 sm:flex-initial p-3.5 bg-secondary/20 hover:bg-secondary/30 text-primary rounded-full transition-colors font-body flex items-center justify-center gap-2"
                     title="Call Now"
                   >
-                    <Phone className="w-6 h-6" />
+                    <Phone className="w-5 h-5" />
+                    <span className="sm:hidden text-sm font-bold">Call Us</span>
                   </a>
                   <Link
                     href="/contact"
-                    className="bg-cta hover:bg-orange-700 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-orange-500/30 uppercase tracking-wide text-sm font-body"
+                    className="flex-2 sm:flex-initial bg-cta hover:bg-orange-700 text-white px-6 sm:px-8 py-3.5 rounded-full font-bold transition-all shadow-lg hover:shadow-orange-500/30 uppercase tracking-wide text-sm font-body text-center flex items-center justify-center"
                   >
                     Inquire Philippines
                   </Link>
@@ -345,6 +248,9 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
+
+          {/* Package 5: Bali Comfort Package (Interactive Selector) */}
+          <BaliPackages />
         </div>
       </section>
 

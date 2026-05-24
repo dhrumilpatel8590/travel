@@ -47,13 +47,13 @@ const destinations = [
   },
   {
     id: "bali",
-    title: "Bali, Indonesia",
+    title: "Bali Comfort Package",
     region: "Southeast Asia",
-    priceTag: "Resort Retreats",
+    priceTag: "₹59,999 / person",
     image:
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800&auto=format&fit=crop",
     description:
-      "Volcano treks, serene rice terraces, and beautiful spiritual temples.",
+      "6N/7D Comfort Package with Vietjet Return Flight ex Ahmedabad. Stays at premium resorts in Kuta & Jimbaran, private tours, and complete itinerary included.",
   },
   {
     id: "swiss-alps",

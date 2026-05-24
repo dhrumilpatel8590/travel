@@ -73,11 +73,13 @@ export default function Footer() {
               <li className="flex items-start gap-3 text-gray-400 font-body">
                 <MapPin className="w-5 h-5 text-secondary mt-1 shrink-0" />
                 <span className="leading-relaxed">
-                  Elohim Tours Corporate HQ
+                  A/202, Sairam Residency,
                   <br />
-                  C.G. Road, Ahmedabad,
+                  Behind Nutan Row House,
                   <br />
-                  Gujarat 380009, India
+                  Near Vidyakunj School,
+                  <br />
+                  Pal, Surat.
                 </span>
               </li>
               <li className="flex items-center gap-3 text-gray-400 font-body">
