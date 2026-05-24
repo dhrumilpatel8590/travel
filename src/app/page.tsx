@@ -21,30 +21,30 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative h-screen min-h-[600px] flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed font-body"
+        className="relative min-h-screen flex items-center justify-center py-24 md:py-32 bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed font-body"
       >
         <div className="absolute inset-0 bg-black/45"></div>
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <span className="inline-block py-1 px-4 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-bold tracking-wider mb-6 border border-white/30 uppercase font-body">
+          <span className="inline-block py-1 px-4 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-bold tracking-wider mb-4 sm:mb-6 border border-white/30 uppercase font-body">
             PREMIER INDIAN TRAVEL AGENCY
           </span>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-heading text-white mb-6 text-shadow leading-none">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-heading text-white mb-4 sm:mb-6 text-shadow leading-none">
             Your Ultimate <br />
             <span className="text-cta font-heading">Travel</span> Experience
           </h1>
-          <p className="text-xl md:text-2xl text-gray-100 mb-10 max-w-3xl mx-auto font-light font-body leading-relaxed">
+          <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-100 mb-6 sm:mb-10 max-w-3xl mx-auto font-light font-body leading-relaxed">
             Unbeatable B2C & B2B land packages. From the sunny beaches of Goa to the vibrant streets of Baku, Tbilisi, and the Philippines—Elohim Tours crafts memories for a lifetime.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center font-body">
             <Link
               href="/services"
-              className="bg-cta hover:bg-orange-700 text-white text-lg px-8 py-4 rounded-full font-bold transition-all shadow-xl hover:shadow-orange-500/30 flex items-center justify-center gap-2 uppercase tracking-wide text-sm font-body"
+              className="bg-cta hover:bg-orange-700 text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold transition-all shadow-xl hover:shadow-orange-500/30 flex items-center justify-center gap-2 uppercase tracking-wide text-xs sm:text-sm font-body"
             >
               Explore Packages <ArrowRight className="w-5 h-5" />
             </Link>
             <Link
               href="/contact"
-              className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 text-lg px-8 py-4 rounded-full font-bold transition-all flex items-center justify-center uppercase tracking-wide text-sm font-body"
+              className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold transition-all flex items-center justify-center uppercase tracking-wide text-xs sm:text-sm font-body"
             >
               Inquire / Call Us
             </Link>
@@ -52,7 +52,7 @@ export default function HomePage() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/70">
+        <div className="hidden sm:block absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/70">
           <ChevronDown className="w-10 h-10" />
         </div>
       </section>

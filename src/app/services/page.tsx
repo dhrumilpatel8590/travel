@@ -41,7 +41,7 @@ export default function ServicesPage() {
 
           {/* Package 2: Baku Experience */}
           <div className="bg-white rounded-3xl p-5 sm:p-8 lg:p-12 shadow-xl border border-border grid lg:grid-cols-12 gap-8 lg:gap-12 items-stretch lg:items-center">
-            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full min-h-[250px] sm:min-h-[350px] lg:min-h-[550px] lg:h-full order-1 lg:order-1">
+            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full lg:min-h-[550px] lg:h-full order-1 lg:order-1">
               <Image
                 src="https://images.unsplash.com/photo-1583467875263-d50dec37a88c?q=80&w=1000&auto=format&fit=crop"
                 alt="Baku Azerbaijan"
@@ -173,7 +173,7 @@ export default function ServicesPage() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full min-h-[250px] sm:min-h-[350px] lg:min-h-[550px] lg:h-full order-1 lg:order-2">
+            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full lg:min-h-[550px] lg:h-full order-1 lg:order-2">
               <Image
                 src="https://images.unsplash.com/photo-1546548970-71785318a17b?q=80&w=1000&auto=format&fit=crop"
                 alt="Tbilisi Georgia"
@@ -189,7 +189,7 @@ export default function ServicesPage() {
 
           {/* Package 4: Philippines */}
           <div className="bg-white rounded-3xl p-5 sm:p-8 lg:p-12 shadow-xl border border-border grid lg:grid-cols-12 gap-8 lg:gap-12 items-stretch lg:items-center">
-            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full min-h-[250px] sm:min-h-[350px] lg:min-h-[550px] lg:h-full order-1 lg:order-1">
+            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full lg:min-h-[550px] lg:h-full order-1 lg:order-1">
               <Image
                 src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=1000&auto=format&fit=crop"
                 alt="Palawan Philippines"

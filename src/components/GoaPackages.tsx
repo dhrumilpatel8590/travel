@@ -25,7 +25,8 @@ interface GoaPackage {
 const packages: Record<"3n4d" | "4n5d", GoaPackage> = {
   "3n4d": {
     duration: "3 Nights / 4 Days",
-    tagline: "Perfect beachside retreat in North Goa with stays at Candolim Beach, transfers, and sightseeing tours included.",
+    tagline:
+      "Perfect beachside retreat in North Goa with stays at Candolim Beach, transfers, and sightseeing tours included.",
     stays: {
       hotel: "3★ Hotel in Candolim",
       subtitle: "Standard Deluxe AC Room stay near the beach",
@@ -49,7 +50,8 @@ const packages: Record<"3n4d" | "4n5d", GoaPackage> = {
   },
   "4n5d": {
     duration: "4 Nights / 5 Days",
-    tagline: "Book 3 Nights & get the 4th Night FREE! Stay in a spacious ASTOR SUITE (Living room + Bedroom, 650 sq ft) with luxury inclusions.",
+    tagline:
+      "Book 3 Nights & get the 4th Night FREE! Stay in a spacious ASTOR SUITE (Living room + Bedroom, 650 sq ft) with luxury inclusions.",
     stays: {
       hotel: "Astor Suites & Spa Candolim",
       subtitle: "5★ Boutique hotel - Astor Suite (650 sq ft)",
@@ -129,8 +131,12 @@ export default function GoaPackages() {
 
         {/* Accommodation Info Box */}
         <div className="bg-background rounded-2xl p-5 sm:p-6 border border-border space-y-2 font-body transition-all duration-300">
-          <h4 className="font-bold text-sm text-text uppercase tracking-wider text-primary font-body flex items-center gap-1.5">🏨 Stay Details</h4>
-          <p className="font-bold text-text text-lg">{currentPkg.stays.hotel}</p>
+          <h4 className="font-bold text-sm text-text uppercase tracking-wider text-primary font-body flex items-center gap-1.5">
+            🏨 Stay Details
+          </h4>
+          <p className="font-bold text-text text-lg">
+            {currentPkg.stays.hotel}
+          </p>
           <p className="text-sm text-muted">{currentPkg.stays.subtitle}</p>
         </div>
 
@@ -142,7 +148,9 @@ export default function GoaPackages() {
             </h4>
             <ul className="space-y-2 text-sm text-muted font-body">
               {currentPkg.inclusions.map((inclusion, idx) => (
-                <li key={idx} className="flex items-start gap-2">✔️ {inclusion}</li>
+                <li key={idx} className="flex items-start gap-2">
+                  ✔️ {inclusion}
+                </li>
               ))}
             </ul>
           </div>
@@ -155,7 +163,9 @@ export default function GoaPackages() {
                 </h4>
                 <ul className="space-y-2 text-sm text-muted font-body">
                   {currentPkg.exclusions.map((exclusion, idx) => (
-                    <li key={idx} className="flex items-start gap-2">❌ {exclusion}</li>
+                    <li key={idx} className="flex items-start gap-2">
+                      ❌ {exclusion}
+                    </li>
                   ))}
                 </ul>
               </>
@@ -168,7 +178,9 @@ export default function GoaPackages() {
                 </h4>
                 <ul className="space-y-2 text-sm text-muted font-body list-disc pl-5">
                   {currentPkg.specialNotes.map((note, idx) => (
-                    <li key={idx} className="text-text font-semibold">{note}</li>
+                    <li key={idx} className="text-text font-semibold">
+                      {note}
+                    </li>
                   ))}
                 </ul>
               </>
@@ -179,14 +191,18 @@ export default function GoaPackages() {
         {/* Pricing and Action Row */}
         <div className="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-t border-border font-body">
           <div>
-            <p className="text-xs uppercase tracking-wider font-bold text-muted font-body">Package Price</p>
+            <p className="text-xs uppercase tracking-wider font-bold text-muted font-body">
+              Package Price
+            </p>
             <span className="text-4xl font-heading text-cta font-bold">
               INR {currentPkg.price}/-
               <span className="text-base font-body text-muted font-normal ml-2">
                 {currentPkg.priceSub}
               </span>
             </span>
-            <p className="text-[10px] text-muted mt-0.5 font-bold">Offer Valid till seats last | B2B & B2C Inquiries</p>
+            <p className="text-[10px] text-muted mt-0.5 font-bold">
+              Offer Valid till seats last | B2B & B2C Inquiries
+            </p>
           </div>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
             <div className="flex gap-3 w-full sm:w-auto">
@@ -210,7 +226,7 @@ export default function GoaPackages() {
       </div>
 
       {/* Right side: Image block */}
-      <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full min-h-[250px] sm:min-h-[350px] lg:min-h-[550px] lg:h-full order-1 lg:order-2">
+      <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto w-full lg:min-h-[550px] lg:h-full order-1 lg:order-2">
         <Image
           src={
             activeTab === "3n4d"
@@ -227,8 +243,12 @@ export default function GoaPackages() {
         </div>
         {activeTab === "4n5d" && (
           <div className="absolute bottom-4 left-4 bg-cta/95 backdrop-blur-md text-white px-4 py-3 rounded-xl shadow-lg font-body text-xs flex flex-col gap-0.5">
-            <span className="font-bold uppercase tracking-wider text-[10px]">Special Promo</span>
-            <span className="font-bold text-sm">Pay 3 Nights, Get 4th Night Free!</span>
+            <span className="font-bold uppercase tracking-wider text-[10px]">
+              Special Promo
+            </span>
+            <span className="font-bold text-sm">
+              Pay 3 Nights, Get 4th Night Free!
+            </span>
           </div>
         )}
       </div>

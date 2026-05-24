@@ -102,12 +102,12 @@ export default function Footer() {
             © 2026 Elohim Tours. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-500 font-body">
-            <a href="#" className="hover:text-white transition-colors">
+            <Link href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
+            </Link>
+            <Link href="/terms" className="hover:text-white transition-colors">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>
