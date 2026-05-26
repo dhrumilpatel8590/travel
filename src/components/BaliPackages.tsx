@@ -12,7 +12,7 @@ export default function BaliPackages() {
     "6n7d": {
       id: "6n7d",
       duration: "6 Nights / 7 Days",
-      price: "59,999",
+      price: "64,999",
       badge: "June Special Deal",
       dates: ["4 June", "13 June", "26 June"],
       stays: [
@@ -55,7 +55,7 @@ export default function BaliPackages() {
     "7n8d": {
       id: "7n8d",
       duration: "7 Nights / 8 Days",
-      price: "62,500",
+      price: "67,500",
       badge: "June Special Deal",
       dates: [
         "9 June",
@@ -134,7 +134,7 @@ export default function BaliPackages() {
                   : "text-muted hover:text-text bg-transparent"
               }`}
             >
-              6N / 7D (₹59,999)
+              6N / 7D (₹64,999)
             </button>
             <button
               onClick={() => setActiveTab("7n8d")}
@@ -144,7 +144,7 @@ export default function BaliPackages() {
                   : "text-muted hover:text-text bg-transparent"
               }`}
             >
-              7N / 8D (₹62,500)
+              7N / 8D (₹67,500)
             </button>
           </div>
         </div>

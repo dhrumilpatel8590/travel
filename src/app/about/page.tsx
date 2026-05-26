@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata = {
   title: "About Us | Elohim Tours",
   description:
-    "Learn about Elohim Tours, our premier B2B and B2C operations across India, Azerbaijan, Georgia, and the Philippines.",
+    "Learn about Elohim Tours, our premier travel operations across India, Azerbaijan, Georgia, and the Philippines.",
 };
 
 export default function AboutPage() {
@@ -50,7 +50,7 @@ export default function AboutPage() {
                 At Elohim Tours, we don&apos;t just sell tickets; we craft fully immersive holiday experiences. Whether it&apos;s a relaxing 3N/4D stay at Candolim Beach in Goa or a premium chauffeured tour of Baku&apos;s historic landmarks, our focus is absolute customer satisfaction.
               </p>
               <p className="text-lg text-muted mb-8 font-body leading-relaxed">
-                We take pride in offering special B2B rates for travel agents and competitive B2C packages for families and couples, backed by 24/7 on-ground assistance.
+                We take pride in offering competitive packages for families, couples, and groups, backed by 24/7 on-ground assistance.
               </p>
               <div className="grid grid-cols-2 gap-8 font-body">
                 <div>

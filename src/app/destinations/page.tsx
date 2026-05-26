@@ -49,7 +49,7 @@ const destinations = [
     id: "bali",
     title: "Bali Comfort Package",
     region: "Southeast Asia",
-    priceTag: "₹59,999 / person",
+    priceTag: "₹64,999 / person",
     image:
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=800&auto=format&fit=crop",
     description:
@@ -90,7 +90,7 @@ export default function DestinationsPage() {
             Our Featured Destinations
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto font-body font-light">
-            Explore our expertly curated domestic and international getaways. Special B2B and B2C operations tailored for Indian travelers.
+            Explore our expertly curated domestic and international getaways tailored for Indian travelers.
           </p>
 
           {/* Filters */}

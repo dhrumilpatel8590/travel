@@ -33,7 +33,7 @@ export default function HomePage() {
             <span className="text-cta font-heading">Travel</span> Experience
           </h1>
           <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-gray-100 mb-6 sm:mb-10 max-w-3xl mx-auto font-light font-body leading-relaxed">
-            Unbeatable B2C & B2B land packages. From the sunny beaches of Goa to the vibrant streets of Baku, Tbilisi, and the Philippines—Elohim Tours crafts memories for a lifetime.
+            Unbeatable land packages. From the sunny beaches of Goa to the vibrant streets of Baku, Tbilisi, and the Philippines—Elohim Tours crafts memories for a lifetime.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center font-body">
             <Link

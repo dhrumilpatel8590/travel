@@ -28,7 +28,7 @@ export default function ServicesPage() {
             Premium Holiday Packages
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto font-body leading-relaxed font-light">
-            Unbeatable B2C & B2B rates. Specializing in top domestic escapes like Goa and premium international getaways across Azerbaijan, Georgia, and the Philippines.
+            Unbeatable package rates. Specializing in top domestic escapes like Goa and premium international getaways across Azerbaijan, Georgia, and the Philippines.
           </p>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function ServicesPage() {
                 Baku Experience Land Package (Without Flight)
               </h2>
               <p className="text-base sm:text-lg text-muted leading-relaxed font-body">
-                Discover the architectural marvels and historic beauty of Azerbaijan with our exclusive premium package, designed for supreme comfort and memorable sightseeing. Special B2B rates available!
+                Discover the architectural marvels and historic beauty of Azerbaijan with our exclusive premium package, designed for supreme comfort and memorable sightseeing. Special rates available!
               </p>
 
               {/* Itinerary & Inclusions */}
@@ -99,7 +99,7 @@ export default function ServicesPage() {
 
               <div className="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-t border-border font-body">
                 <div>
-                  <p className="text-xs uppercase tracking-wider font-bold text-cta font-body">B2B & B2C Inquiries</p>
+                  <p className="text-xs uppercase tracking-wider font-bold text-cta font-body">Booking Inquiries</p>
                   <span className="text-3xl font-heading text-text font-bold">
                     Best Industry Rates
                   </span>
@@ -117,7 +117,7 @@ export default function ServicesPage() {
                     href="/contact"
                     className="flex-2 sm:flex-initial bg-cta hover:bg-orange-700 text-white px-6 sm:px-8 py-3.5 rounded-full font-bold transition-all shadow-lg hover:shadow-orange-500/30 uppercase tracking-wide text-sm font-body text-center flex items-center justify-center"
                   >
-                    Inquire B2B / B2C
+                    Inquire Now
                   </Link>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default function ServicesPage() {
                 Philippines Island Escape (Palawan & Manila)
               </h2>
               <p className="text-base sm:text-lg text-muted leading-relaxed font-body">
-                Immerse yourself in world-renowned limestone lagoons, crystal turquoise beaches, and spectacular underwater marine life. B2B & B2C custom land operations.
+                Immerse yourself in world-renowned limestone lagoons, crystal turquoise beaches, and spectacular underwater marine life. Custom land operations.
               </p>
               <ul className="space-y-3 text-muted mb-8 list-disc list-inside font-body text-sm">
                 <li>Premium beachside resort accommodations with breakfast</li>
@@ -287,7 +287,7 @@ export default function ServicesPage() {
               </div>
               <h3 className="text-xl font-heading text-text mb-2 font-body font-bold">Customization</h3>
               <p className="text-muted text-sm leading-relaxed font-body">
-                We confirm hotel availability, B2B/B2C rates, and customize inclusions.
+                We confirm hotel availability, package rates, and customize inclusions.
               </p>
             </div>
 

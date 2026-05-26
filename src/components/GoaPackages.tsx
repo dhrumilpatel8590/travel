@@ -201,7 +201,7 @@ export default function GoaPackages() {
               </span>
             </span>
             <p className="text-[10px] text-muted mt-0.5 font-bold">
-              Offer Valid till seats last | B2B & B2C Inquiries
+              Offer Valid till seats last | Booking Inquiries
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
